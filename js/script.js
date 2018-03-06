@@ -1,5 +1,5 @@
 var p1Button = document.querySelector("#p1");
-var p2Button = document.getElementById("p2");
+var p2Button =  document.querySelector("#p2");
 var resetButton = document.querySelector("#reset");
 var p1Display = document.querySelector("#p1Display");
 var p2Display = document.querySelector("#p2Display");
@@ -43,7 +43,7 @@ function reset() {
   p1Display.textContent = p1Score;//sets text to zero
   p2Display.textContent = p2Score;
 
-  p1Display.classList.remove("winner");//removing green color
+  p1Display.classList.remove("winner");//removes green color
   p2Display.classList.remove("winner");
 
   gameOver = false;
